@@ -81,7 +81,6 @@ public class AddressBookMain {
 				}
 				System.out.println();
 				break;
-				
 			case 7:
 				Set<Map.Entry<String, AddressBook>> addressBook = addressBookHashMap.entrySet();
 				if (addressBook.isEmpty()) {
@@ -94,7 +93,6 @@ public class AddressBookMain {
 				}
 				break;
 			default:
-				
 				System.out.println("Invalid Input");
 			}
 		}
