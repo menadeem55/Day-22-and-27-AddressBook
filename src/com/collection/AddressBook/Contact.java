@@ -1,7 +1,9 @@
 package com.collection.AddressBook;
-import java.util.*;
+
+import java.util.Scanner;
+
 public class Contact {
-	 ////variables representation////
+    ////variables representation////
     String firstName;
     String lastName;
     String address;
@@ -31,7 +33,6 @@ public class Contact {
         System.out.println("Enter zip : ");
         this.zip = scan.nextLine();
     }
-    
     @Override
     public String toString() {
         return "Contact [firstName=" + firstName + ", lastName=" + lastName + ", address=" + address + ", city=" + city
