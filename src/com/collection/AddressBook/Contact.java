@@ -14,6 +14,8 @@ public class Contact {
     String email;
     String zip;
 
+
+
     void addContact() {
         Scanner scan=new Scanner(System.in);
         System.out.println("First Name :");

@@ -4,6 +4,7 @@ import java.util.Scanner;
 import java.util.List;
 import java.util.stream.Collectors;
 public class AddressBookMain {
+	
 	static ArrayList<AddressBook> books = new ArrayList<AddressBook>();
 
 
@@ -137,17 +138,8 @@ public class AddressBookMain {
                         System.out.println("Addressbook is empty");
                     }
                     else {
-                        Scanner scan = new Scanner(System.in);
-                        while (true) {
-                            System.out.println(
-                                    "Press \n 0 to sort by contact name \n 1 to sort by city \n 2 to sort by state \n 3 to sort by zip");
-                            int response1 = scan.nextInt();
-                            int a = books.get(i).sort(response1, books.get(i));
-                            if(a == 0) {
-                                break;
-                            }
-                        }
-
+                        books.get(i).list.sort((Contact x1, Contact x2)->x1.firstName.compareTo(x2.firstName));
+                        books.get(i).list.forEach((s)->System.out.println(s));
                     }
                     break;
                 default:
